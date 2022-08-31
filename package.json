@@ -4,7 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open",
-    "cy:dash": "npx cypress run --record --key bd254531-e166-439a-828f-71470cd55113"
+    "cy:dash": "npx cypress run --record --key 06c81e20-c218-4ec9-b9c9-6b16f0c937db",
+    "cy:book": "cypress run --spec 'cypress/integration/booking-ticket-in-accessible-hall.spec.js' --record --key 06c81e20-c218-4ec9-b9c9-6b16f0c937db",
+    "cy:home": "cypress run --spec 'cypress/integration/home-page-display.spec.js' --record --key 06c81e20-c218-4ec9-b9c9-6b16f0c937db",
+    "cy:login": "cypress run --spec 'cypress/integration/login-verification-in-admin.spec.js' --record --key 06c81e20-c218-4ec9-b9c9-6b16f0c937db",
+    "cy:parallel": "npm run cy:book -- --browser chrome --group Spec1 --ci-build-id 1 & npm run cy:home -- --browser chrome --group Spec2 --ci-build-id 1 & npm run cy:login -- --browser chrome --group Spec3 --ci-build-id 1"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +19,10 @@
     "cypress-file-upload": "^5.0.8",
     "eslint": "^8.6.0",
     "prettier": "^2.5.1"
+  },
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "cypress-parallel": "^0.9.1"
   }
 }

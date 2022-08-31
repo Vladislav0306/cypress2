@@ -1,0 +1,19 @@
+{
+  "name": "cinema",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "cy:dash": "npx cypress run --record --key bd254531-e166-439a-828f-71470cd55113"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "chai": "^4.3.4",
+    "cypress": "^9.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "eslint": "^8.6.0",
+    "prettier": "^2.5.1"
+  }
+}

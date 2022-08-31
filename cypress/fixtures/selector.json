@@ -1,0 +1,9 @@
+{
+    "lineNotFilled": "[for='email'] > .login__input",
+    "week": "a.page-nav__day",
+    "chooseFilm": ".movie",
+    "hallOpening": "#start-sales",
+    "chooseTimeSession": "a.page-nav__day:nth-of-type(4)",
+    "chooseChair": ".buying-scheme__chair_standart:not(.buying-scheme__chair_taken):first",
+    "pushButton": ".acceptin-button"
+}
